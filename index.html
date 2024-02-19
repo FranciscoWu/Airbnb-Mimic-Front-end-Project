@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiaomi Store Website Replication</title>
+    <!-- 用link引入reset.css作为初始样式 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 用link引入mi.css作为整体样式 -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 用link引入网站图标 -->
+    <link rel="icon" href="./images/favicon.ico"/>
+    <!-- 引入字体图标库 -->
+    <link rel="stylesheet" href="./css/iconfont/iconfont.css">
+    
+</head>
+<body>
+    
+    <!-- black navigation bar -->
+    <!-- 1. 两个div，一个大容器，一个小容器放导航栏功能
+         2. 两个ul，一个放左边的功能，一个放右边的功能 -->
+
+    <div class="black-nav">
+        <div class="wrap">
+            <ul class="black-nav-left">
+                <li><a href="#">Mi Homepage</a><span>|</span></li>
+                <li><a href="#">Mi Store</a><span>|</span></li>
+                <li><a href="#">Mi HyperOS</a><span>|</span></li>
+                <li><a href="#">IoT</a><span>|</span></li>
+                <li><a href="#">Cloud Service</a><span>|</span></li>
+                <li><a href="#">Qualification Certificates</a><span>|</span></li>
+                <li><a href="#">Protocol Rule</a><span>|</span></li>
+                <!-- 因为下载APP的样式不一样，所以单独给个class -->
+                <li>
+                    <a href="#">Download APP</a>
+                    <span>|</span>
+                    <div class="download">
+                        <img src="./images/download.png" alt="Mi APP QR code">
+                        <p>Scan to download Mi APP</p>
+                    </div>
+                    <div class="arrow"></div>
+                </li>
+                <li><a href="#">Selection Location</a><span>|</span></li>
+            </ul>
+
+            <ul class="black-nav-right">
+                <li><a href="#">Log In</a><span>|</span></li>
+                <li><a href="#">Sign Up</a><span>|</span></li>
+                <li><a href="#">Message Notification</a><span>|</span></li>
+                <!-- 因为购物车的样式不一样，所以单独给个class -->
+                <li class="cart">
+                    <a href="#">
+                        <i class="iconfont">&#xe607</i>
+                        <i>Shopping Cart(0)</i>
+                    </a>
+                    <div class="cart-list">
+                        The cart is empty
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- black navigation bar -->
+
+    <!-- White navigation bar -->
+    <div class="white-nav">
+        <div class="wrap">
+            <div class="logo">
+                <img src="./images/mi-home.png" alt="mi-home" class="mi-home">
+                <img src="./images/mi-logo.png" alt="mi-logo" class="mi-logo">
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li>
+                        <a href="#">Smartphone</a>
+                        <div class="nav-bar-list">
+                            <div class="wrap">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/phone1.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Xiaomi 14 Pro</p>
+                                            <p class="price">From 4999 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/phone2.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Xiaomi 14</p>
+                                            <p class="price">From 3999 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/phone3.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Xiaomi MIX Fold3</p>
+                                            <p class="price">From 8999 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/phone4.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Xiaomi Civi3</p>
+                                            <p class="price">From 2299 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/phone5.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Xiaomi 13 Ultra</p>
+                                            <p class="price">From 5399 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/phone6.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Xiami 13</p>
+                                            <p class="price">From 3299 ¥</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">TV</a>
+                        <div class="nav-bar-list">
+                            <div class="wrap">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/TV1.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Xiaomi TV S Pro 65 Mini LED 65' </p>
+                                            <p class="price">4499 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/TV2.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Xiaomi TV New EA Series</p>
+                                            <p class="price">From 799 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/TV3.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Xiaomi TV Master 86' Mini LED</p>
+                                            <p class="price">14999 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/TV4.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Xiaomi TV S65 65'</p>
+                                            <p class="price">2999 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/TV5.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Xiaomi TV A65 Gaming 65'</p>
+                                            <p class="price">2399 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/TV6.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Redmi MAX 100'</p>
+                                            <p class="price">10999 ¥</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Notebook</a>
+                        <div class="nav-bar-list">
+                            <div class="wrap">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/Notebook1.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Redmi Book 16 2024</p>
+                                            <p class="price">From 3699 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/Notebook2.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Redmi Book 14 2024</p>
+                                            <p class="price">From 4499 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/Notebook3.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Redmi Book Pro 15 2023</p>
+                                            <p class="price">From 4799 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/Notebook4.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Redmi Book 14</p>
+                                            <p class="price">From 4599 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/Notebook5.webp" alt="phone">
+                                            </div>
+                                            <p class="name">RedmiBook Pro 15 2022</p>
+                                            <p class="price">From 5499 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/Notebook6.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Redmi Book 15E</p>
+                                            <p class="price">From 3599 ¥</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Pad</a>
+                        <div class="nav-bar-list">
+                            <div class="wrap">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/Pad1.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Redmi Pad SE</p>
+                                            <p class="price">From 899 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/Pad2.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Xiaomi Pad 6 Max 14</p>
+                                            <p class="price">From 3799 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/Pad3.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Xiaomi Pad 6 Pro</p>
+                                            <p class="price">From 2299 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/Pad4.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Xiaomi Pad 6</p>
+                                            <p class="price">From 1799 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/Pad5.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Redmi Pad</p>
+                                            <p class="price">From 1099 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/Pad6.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Xiaomi Pad 5 Pro 12.4</p>
+                                            <p class="price">From 1899 ¥</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Home Appliance</a>
+                        <div class="nav-bar-list">
+                            <div class="wrap">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/HomeAppliance1.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Mi Side-by-side Refrigerator 610L</p>
+                                            <p class="price">2199 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/HomeAppliance2.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Mi Side-by-side Refrigerator 536L</p>
+                                            <p class="price">1999 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/HomeAppliance3.webp" alt="phone">
+                                            </div>
+                                            <p class="name">FreshAir Air Conditioner</p>
+                                            <p class="price">6999 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/HomeAppliance4.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Xiaomi Air Conditioner</p>
+                                            <p class="price">2099 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/HomeAppliance5.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Xiaomi Dual-Zone Washer Dryer 15kg</p>
+                                            <p class="price">5299 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/HomeAppliance6.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Xiaomi Washer Dryer 12kg</p>
+                                            <p class="price">2099 ¥</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Router</a>
+                        <div class="nav-bar-list">
+                            <div class="wrap">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/Router1.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Xiaomi Router AX3000T</p>
+                                            <p class="price">179 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/Router2.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Xiaomi Router BE3600</p>
+                                            <p class="price">269 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/Router3.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Xiaomi Router BE6500 Pro</p>
+                                            <p class="price">699 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/Router4.webp" alt="phone">
+                                            </div>
+                                            <p class="name">Xiaomi HomeWiFi Mesh Router</p>
+                                            <p class="price">1299 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/Router5.jpg" alt="phone">
+                                            </div>
+                                            <p class="name">Xiaomi Router 4A 1kMb Version</p>
+                                            <p class="price">99 ¥</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="./images/New images/Router6.png" alt="phone">
+                                            </div>
+                                            <p class="name">View All</p>
+                                            <p class="price">From 99 ¥</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="POCO F5 Pro">
+                <button class="iconfont">&#xe63d</button>
+            </div>
+        </div>
+    </div>
+    <!-- White navigation bar -->
+
+
+
+    <!-- banner -->
+    <div class="banner">
+        <div class="wrap">
+            <div class="bannercontent">
+                <ul id="banner-imgs">
+                    <li>
+                        <a href="#"><img class="banner-img active" src="./images/New images/banner.webp" alt="banner"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="banner-img" src="./images/New images/banner2.jpg "alt="banner"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="banner-img" src="./images/New images/banner3.jpg" alt="banner"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="banner-img" src="./images/New images/banner4.jpg" alt="banner"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="banner-img" src="./images/New images/banner5.jpg" alt="banner"></a>
+                    </li>
+                </ul>
+
+                <!-- 这里写按钮 -->
+                <div id="btn-left"></div>
+                <div id="btn-right"></div>
+                <!-- 这里写点 -->
+                <ul id="points">
+                    <li class="point active" data-index="0"></li>
+                    <li class="point" data-index="1"></li>
+                    <li class="point" data-index="2"></li>
+                    <li class="point" data-index="3"></li>
+                    <li class="point" data-index="4"></li>
+                </ul>
+            </div>
+            <div class="slide">
+                <ul>
+                    <li>
+                        <a href="#">Smartphone<i class="iconfont">&#xe621</i></a>
+                        <div class="slide-list">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/New images/Bannerphone1.webp" alt="">
+                                        <span>Xiaomi MIX Series</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/New images/Bannerphone2.webp" alt="">
+                                        <span>Xiaomi Digital Series</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/New images/Bannerphone3.webp" alt="">
+                                        <span>Xiaomi Civi Series</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/New images/Bannerphone4.webp" alt="">
+                                        <span>Redmi K Series</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/New images/Bannerphone5.webp" alt="">
+                                        <span>Redmi Note Series</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/New images/Bannerphone6.webp" alt="">
+                                        <span>Redmi Digital Series</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">TV<i class="iconfont">&#xe621</i></a>
+                        <div class="slide-list">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/New images/BannerTV1.webp" alt="">
+                                        <span>Xiaomi TV S Pro Mini LED</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/New images/BannerTV2.webp" alt="">
+                                        <span>Xiaomi TV Master Series</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/New images/BannerTV3.webp" alt="">
+                                        <span>Xiaomi TV S Series</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/New images/BannerTV4.webp" alt="">
+                                        <span>Xiaomi TV EA Series</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/New images/BannerTV5.webp" alt="">
+                                        <span>Redmi TV MAX Series</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/New images/BannerTV6.webp" alt="">
+                                        <span>Redmi TV A Series</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Home Appliance<i class="iconfont">&#xe621</i></a>
+                    </li>
+                    <li>
+                        <a href="#">Notebook/Pad<i class="iconfont">&#xe621</i></a>
+                    </li>
+                    <li>
+                        <a href="#">Wearables<i class="iconfont">&#xe621</i></a>
+                    </li>
+                    <li>
+                        <a href="#">Sound<i class="iconfont">&#xe621</i></a>
+                    </li>
+                    <li>
+                        <a href="#">Health/Children<i class="iconfont">&#xe621</i></a>
+                    </li>
+                    <li>
+                        <a href="#">Life/Bags<i class="iconfont">&#xe621</i></a>
+                    </li>
+                    <li>
+                        <a href="#">Smart/Router<i class="iconfont">&#xe621</i></a>
+                    </li>
+                    <li>
+                        <a href="#">Power/Accessories<i class="iconfont">&#xe621</i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- banner -->
+
+    <!-- Ad -->
+    <div class="ad">
+        <div class="wrap">
+            <div class="ad-aside">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont">&#xe605;</i>
+                            <p>Warranty Service</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont">&#xe64a;</i>
+                            <p>Bulk Purchase</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont">&#xf003d;</i>
+                            <p>F Code Channel</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont">&#xe733;</i>
+                            <p>Mi Fan Card</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont">&#xe641;</i>
+                            <p>Trade-In Program</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont">&#xe65c;</i>
+                            <p>Phone Recharge</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ad-img">
+                <a href="#"><img src="./images/New images/ad1.png" alt=""></a>
+            </div>
+            <div class="ad-img">
+                <a href="#"><img src="./images/New images/ad2.jpg" alt=""></a>
+            </div>
+            <div class="ad-img">
+                <a href="#"><img src="./images/New images/ad3.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <!-- Ad -->
+
+    <!-- content -->
+    <div class="content">
+        <div class="wrap">
+            <!-- smartphone -->
+            <div class="phone">
+                <h3 class="title">Smartphone</h3>
+                <div class="phone-box">
+                    <div class="phone-box-left">
+                        <a href="#">
+                            <img src="./images/phone_left.jpg" alt="phone">
+                        </a>
+                    </div>
+                    <div class="phone-box-right">
+                        <div class="item">
+                            <a href="#">
+                                <img class="item-img" src="./images/New images/phone_right1.webp" alt="">
+                                <p class="item-name">Redmi K70 Pro</p>
+                                <p class="item-desc">Snapdragon 8 Gen 3</p>
+                                <p class="item-price">From 3299 ¥</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img class="item-img" src="./images/New images/phone_right2.webp" alt="">
+                                <p class="item-name">Redmi K70</p>
+                                <p class="item-desc">Snapdragon 8 Gen 2</p>
+                                <p class="item-price">From 2499 ¥</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img class="item-img" src="./images/New images/phone_right3.webp" alt="">
+                                <p class="item-name">Redmi K70E</p>
+                                <p class="item-desc">New Generation Flagship Processor</p>
+                                <p class="item-price">From 1899 ¥</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img class="item-img" src="./images/New images/phone_right4.webp" alt="">
+                                <p class="item-name">Xiaomi 14 Pro</p>
+                                <p class="item-desc">Leica Summilux Variable Aperture Lens</p>
+                                <p class="item-price">From 4999 ¥</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img class="item-img" src="./images/New images/phone_right5.webp" alt="">
+                                <p class="item-name">Xiaomi 14</p>
+                                <p class="item-desc">Leica Optical Summilux Lens</p>
+                                <p class="item-price">From 3999 ¥</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img class="item-img" src="./images/New images/phone_right6.webp" alt="">
+                                <p class="item-name">Redmi Note 13 Pro</p>
+                                <p class="item-desc">Little Diamond Quality</p>
+                                <p class="item-price">From 1399 ¥</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img class="item-img" src="./images/New images/phone_right7.webp" alt="">
+                                <p class="item-name">Redmi Note 13 Pro+</p>
+                                <p class="item-desc">Dimensity 7200-Ultra Processor</p>
+                                <p class="item-price">From 1899 ¥</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img class="item-img" src="./images/New images/phone_right8.webp" alt="">
+                                <p class="item-name">Redmi Note 13 5G</p>
+                                <p class="item-desc">100 Million Pixels: Faster and Clearer</p>
+                                <p class="item-price">From 999 ¥</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="big-img">
+                    <a href="#">
+                        <img src="./images/phone_ad.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- smartphone -->
+
+            <!-- home appliance -->
+            <div class="elc">
+                <h3 class="title">Home Appliance</h3>
+                <div class="elc-box">
+                    <div class="item elc-item">
+                        <a href="#">
+                            <img src="./images/New images/HomeAppliance_left1.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./images/New images/HomeAppliance_right1.webp" alt="">
+                            <p class="item-name">Xiaomi TV 6 65' OLED</p>
+                            <p class="item-desc">OLED Self-Luminous Display</p>
+                            <p class="item-price">5999 ¥ <del>6999 ¥</del></p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./images/New images/HomeAppliance_right2.webp" alt="">
+                            <p class="item-name">Xiaomi TV 6 Premium 65'</p>
+                            <p class="item-desc">Hundred-Zone Backlight</p>
+                            <p class="item-price">6899 ¥ <del>7999 ¥</del></p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./images/New images/HomeAppliance_right3.webp" alt="">
+                            <p class="item-name">Xiaomi TV ES55 2022</p>
+                            <p class="item-desc">Multi-Zone Backlight</p>
+                            <p class="item-price">2399 ¥ <del>2999 ¥</del></p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./images/New images/HomeAppliance_right4.webp" alt="">
+                            <p class="item-name">Xiaomi FreshAir Air-Con</p>
+                            <p class="item-desc">Whole House Quick Ventilation</p>
+                            <p class="item-price">6999 ¥ <del>7299 ¥</del></p>
+                        </a>
+                    </div>
+                    <div class="item elc-item">
+                        <a href="#">
+                            <img src="./images/New images/HomeAppliance_left2.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./images/New images/HomeAppliance_right5.webp" alt="">
+                            <p class="item-name">Dual-Zone WasherDryer 15kg</p>
+                            <p class="item-desc">Healthy Separate Washing</p>
+                            <p class="item-price">5299 ¥ <del>5999 ¥</del></p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./images/New images/HomeAppliance_right6.webp" alt="">
+                            <p class="item-name">Washing Machine 10kg</p>
+                            <p class="item-desc">Panoramic Glass Damper Top Cover</p>
+                            <p class="item-price">899 ¥ <del>1499 ¥</del></p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./images/New images/HomeAppliance_right8.webp" alt="">
+                            <p class="item-name">Xiaomi Air Conditioner</p>
+                            <p class="item-desc">Powerful Cooling</p>
+                            <p class="item-price">2099 ¥<del>2499 ¥</del></p>
+                        </a>
+                    </div>
+                    <div class="item-last">
+                        <a href="#">
+                            <div></div>
+                            <div></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="big-img">
+                    <a href="#">
+                        <img src="./images/phone_ad.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- home appliance -->
+
+            <!-- videos -->
+            <div class="video">
+                <h3 class="title">Videos</h3>
+                <div class="video-box">
+                    <div>
+                        <div class="video-img">
+                            <a href="#"><img class="video-img2" src="./images/New images/Newvideo1.webp" alt=""></a>
+                            <div class="btn">
+                                <div class="triangle"></div>
+                            </div>
+                        </div>
+                        <p class="video-name">Cali. Rediscover Colombia!</p>
+                        <p class="video-desc">Resilience is a quality rooted in each of us as Colombians. Join us on this adventure with Xiaomi pe..</p>
+                    </div>
+                    <div>
+                        <div class="video-img">
+                            <a href="#"><img class="video-img2"src="./images/New images/Newvideo2.webp" alt=""></a>
+                            <div class="btn">
+                                <div class="triangle"></div>
+                            </div>
+                        </div>
+                        <p class="video-name">Meet Xiaomi's Creators</p>
+                        <p class="video-desc">Dmitry Volny Meet our Xiaomi creator, @volny_pro, to see how his creative and inspiring mind keeps working!</p>
+                    </div>
+                    <div>
+                        <div class="video-img">
+                            <a href="#"><img class="video-img2" src="./images/New images/Newvideo3.webp" alt=""></a>
+                            <div class="btn">
+                                <div class="triangle"></div>
+                            </div>
+                        </div>
+                        <p class="video-name">On Valentine's Day</p>
+                        <p class="video-desc">Redmi Note 13 series and smart wearable devices are here to help you find your soulmate among the hundreds of lost...</p>
+                    </div>
+                    <div>
+                        <div class="video-img">
+                            <a href="#"><img class="video-img2" src="./images/New images/Newvideo4.webp" alt=""></a>
+                            <div class="btn">
+                                <div class="triangle"></div>
+                            </div>
+                        </div>
+                        <p class="video-name">The Audition</p>
+                        <p class="video-desc">It's always nice to have a support team on the journey to pursue your dreams. Capturing and preserving moving moments is always a...</p>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+            <!-- videos -->
+        </div>
+    </div>
+    <!-- content -->
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="wrap">
+            <div class="footer-service">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont">&#xe629;</i>
+                            <span>Appointment Repair Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont">&#xe60e;</i>
+                            <span>7-Day No-reason Return</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont">&#xe606;</i>
+                            <span>15-Day Free Replacement</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont">&#xe624;</i>
+                            <span>Free Delivery Over $69</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont">&#xe617;</i>
+                            <span>1100+ After-Sales Centers</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-link">
+                <ul>
+                    <li>Shopping Guide</li>
+                    <li><a href="#">Smartphone</a></li>
+                    <li><a href="#">TV</a></li>
+                    <li><a href="#">Notebook</a></li>
+                    <li><a href="#">Smartphone</a></li>
+                    <li><a href="#">Pad</a></li>
+                    <li><a href="#">Wearables</a></li>
+                    <li><a href="#">Earphones</a></li>
+                    <li><a href="#">Home Appliance</a></li>
+                    <li><a href="#">Router</a></li>
+                    <li><a href="#">Speakers</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+
+                <ul>
+                    <li>Service Center</li>
+                    <li><a href="#">Apply for After-Sales Service</a></li>
+                    <li><a href="#">After-Sales Policy</a></li>
+                    <li><a href="#">Repair Service Prices</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Trade-In Program</a></li>
+                    <li><a href="#">Warranty Service</a></li>
+                    <li><a href="#">Anti-Counterfeiting Query</a></li>
+                    <li><a href="#">F Code Channel</a></li>
+                </ul>
+
+                <ul>
+                    <li>Offline Stores</li>
+                    <li><a href="#">Mi Home</a></li>
+                    <li><a href="#">After-Sales Policy</a></li>
+                    <li><a href="#">Service Centers</a></li>
+                    <li><a href="#">Authorized Experience Stores/Zones</a></li>
+                </ul>
+
+                <ul>
+                    <li>About Xiaomi</li>
+                    <li><a href="#">Learn About Xiaomi</a></li>
+                    <li><a href="#">Join Xiaomi</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Sustainable Development</a></li>
+                    <li><a href="#">Integrity Reporting</a></li>
+                </ul>
+
+                <ul>
+                    <li>Follow Us</li>
+                    <li><a href="#">Sina Weibo</a></li>
+                    <li><a href="#">Official WeChat</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Xiaomi Charity Foundation</a></li>
+                </ul>
+
+                <div class="footer-aside">
+                    <p class="tel">400-100-5678</p>
+                    <p class="time">8:00-18:00</p>
+                    <a href="#" class="staffservice">Staff Service</a>
+                    <div class="follow">
+                        Follow Xiaomi:
+                        <img src="./images/wb.png" alt="">
+                        <img src="./images/wx.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+</body>
+<script type="text/javascript" src="./style/index.js"></script>
+</html>
